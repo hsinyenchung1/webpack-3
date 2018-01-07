@@ -1,0 +1,23 @@
+ “scripts”: {
+  //npm run build to build production bundles
+  “build”: “webpack --config webpack.config.prod.js”,
+  //npm run dev to generate development bundles and run dev. server
+  “dev”: “webpack-dev-server”
+ }
+
+
+//Via CLI
+webpack-dev-server --hot --inline
+
+
+this something does not work
+//Via webpack.config.js
+devServer: {
+ inline: true,
+ hot:true
+ }
+
+ css-loader
+ url=false
+ disable handle the url
+ 

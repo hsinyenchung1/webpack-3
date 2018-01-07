@@ -43,14 +43,14 @@ const config = {
 
 	    {
 		  test: /\.scss$/,
-		  include: [path.resolve(__dirname, 'src', 'assets', 'scss')],
+		  include: [path.resolve(__dirname, "src/assets/scss")],
 		  use: extractPlugin.extract({
+		  	publicPath: '../../',
 		    use: [
 		    	{
 			        loader: 'css-loader',
 			        options: {
-			          sourceMap: true
-					}
+			        }
 			    },
 			    {
 			        loader: 'sass-loader',
